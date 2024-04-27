@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <title>Currency Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Currency Converter</h1>
+
+        <div class="top">
+            <div class="top__display">
+                <span class="top__current"></span>
+                <span><i class="fas fa-sync-alt"></i></span>
+                <span class="top__output"></span>
+            </div>
+            <div class="top__input">
+                <input type="number" class="amount--input" id="amount" placeholder="Enter amount">
+                <button class="amount--clear" id="clear--btn">Clear</button>
+            </div>
+        </div>
+    
+
+        <div class="bottom">
+            <select class="bottom__current--select" id="current--select">
+                <option value="1">USD $</option>
+                <option value="2">EUR €</option>
+                <option value="3">JPY ¥</option>
+                <option value="4">GBP £</option>
+                <option value="5">AUD A$</option>
+                <option value="6">CAD C$</option>
+                <option value="7">CHF Fr</option>
+                <option value="7">INR</option>
+            </select>
+            <i class="fas fa-arrow-right"></i>
+            <select class="bottom__output--select" id="output--select">
+                <option value="1">USD $</option>
+                <option value="2">EUR €</option>
+                <option value="3">JPY ¥</option>
+                <option value="4">GBP £</option>
+                <option value="5">AUD A$</option>
+                <option value="6">CAD A$</option>
+                <option value="7">CHF Fr</option>
+                <option value="8">INR</option>
+            </select>
+            <button class="bottom__convert--btn" id="convert--btn">Convert</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

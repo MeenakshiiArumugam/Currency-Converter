@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+    --ff-primary: 'Poppins','Poppins';
+    --fs-normal: 1em;
+    --fw-regular: 300;
+    --fw-bold: 900;
+    --clr-light: #edf2f4;
+    --clr-dark: #002473;
+    --clr-one: #64bb9b;
+    --clr-two: #004733; 
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.5);
+}
+
+/* General Styles */
+
+body {
+    background-image: url(background-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 19px;
+    font-family: var(--ff-primary);
+    text-decoration-color: rgb(80, 80, 80);
+}
+
+h1 {
+    text-align: center;
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-primary);
+}
+
+select,
+option,
+input {
+    background: #155a45;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s ease;
+    font-family: var(--ff-primary);
+}
+
+select:hover {
+    opacity: 0.6;
+}
+
+::placeholder {
+    color: var(--clr-light);
+}
+
+button {
+    margin-left: 5px;
+    background: var(--clr-one);
+    color: white;
+    
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background: var(--clr-two);
+}
+
+/* Class Styles */
+
+.container {
+    background-color: var(--clr-one);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: var(--bs);
+    font-size: var(--fs-normal);
+    border-radius: 50px;
+    font-family: var(--ff-primary);
+}
+
+.top__display {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    vertical-align: center;
+    font-family: var(--ff-primary);
+}
+
+.fa-sync-alt {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    
+}
+
+.top__input {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 5em 0;
+    font-family: var(--ff-primary);
+}
+
+.amount--input,
+.bottom__current--select,
+.bottom__output--select {
+    font-size: var(--fs-normal);
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    font-family: var(--ff-primary);
+}
+
+.fa-arrow-right {
+    margin-top: 2px;
+    font-size: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: aliceblue;
+}
+
+.bottom__convert--btn,
+.amount--clear {
+    font-size: 25px;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    stroke-width: 0.29%;
+    font-family: var(--ff-primary);
+
+}
+
+.bottom {
+    display: flex;
+    flex-direction: vertical;
+    justify-content: center;
+    padding: 2em;
+    margin: 2px;
+    font-family: var(--ff-primary);
+}
+
+
